@@ -1,0 +1,18 @@
+CREATE TABLE estudiantes (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nombre TEXT NOT NULL,
+  edad INTEGER,
+  correo TEXT UNIQUE
+);
+
+CREATE TABLE profesores (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nombre TEXT NOT NULL,
+  especialidad TEXT
+);
+
+CREATE TABLE cursos (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nombre TEXT NOT NULL,
+  descripcion TEXT
+);
